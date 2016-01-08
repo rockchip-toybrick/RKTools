@@ -2,20 +2,22 @@
 #
 #HWDEF		HWDEF
 package-file	package-file
-bootloader	RK3126MiniLoaderAll_V2.25.bin
-parameter	rk312x.parameter.txt
-uboot		Image/uboot.img
+bootloader	RK3368MiniLoaderAll_V2.50.bin
+parameter	parameter.txt
+trust       trust.img
+uboot       Image/uboot.img
 misc		Image/misc.img
-resource    Image/resource.img
+resource	Image/resource.img
 kernel		Image/kernel.img
 boot        Image/boot.img
 recovery	Image/recovery.img
 system		Image/system.img
+# baseparamer  Image/baseparamer.img
 # 要写入backup分区的文件就是自身（update.img）
 # SELF 是关键字，表示升级文件（update.img）自身
 # 在生成升级文件时，不加入SELF文件的内容，但在头部信息中有记录
 # 在解包升级文件时，不解包SELF文件的内容。
 # RESERVED不打包backup
-backup		RESERVED
+backup		backupimage/backup.img
 update-script	update-script
 recover-script	recover-script
