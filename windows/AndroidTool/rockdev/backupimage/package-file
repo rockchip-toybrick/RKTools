@@ -2,9 +2,9 @@
 # 生成 backup.img，不包含system.img
 #HWDEF		HWDEF
 package-file	package-file
-bootloader	./../RK3368MiniLoaderAll_V2.50.bin
-parameter	./../parameter.txt
-trust       ./../trust.img
+bootloader	./../Image/MiniLoaderAll.bin
+parameter	./../Image/parameter.txt
+trust       ./../Image/trust.img
 uboot       ./../Image/uboot.img
 misc		./../Image/misc.img
 kernel		./../Image/kernel.img
