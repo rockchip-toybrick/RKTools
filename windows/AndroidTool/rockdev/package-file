@@ -12,6 +12,8 @@ kernel		Image/kernel.img
 boot        Image/boot.img
 recovery	Image/recovery.img
 system		Image/system.img
+vendor		Image/vendor.img
+oem		Image/oem.img
 # baseparamer  Image/baseparamer.img
 # 要写入backup分区的文件就是自身（update.img）
 # SELF 是关键字，表示升级文件（update.img）自身
