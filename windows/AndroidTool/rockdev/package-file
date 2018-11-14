@@ -7,9 +7,11 @@ parameter	Image/parameter.txt
 trust       Image/trust.img
 uboot       Image/uboot.img
 misc		Image/misc.img
-resource	Image/resource.img
-kernel		Image/kernel.img
+#resource	Image/resource.img
+#kernel		Image/kernel.img
 boot        Image/boot.img
+dtbo        Image/dtbo.img
+vbmeta      Image/vbmeta.img
 recovery	Image/recovery.img
 system		Image/system.img
 vendor		Image/vendor.img
@@ -20,6 +22,6 @@ oem		Image/oem.img
 # 在生成升级文件时，不加入SELF文件的内容，但在头部信息中有记录
 # 在解包升级文件时，不解包SELF文件的内容。
 # RESERVED不打包backup
-backup		backupimage/backup.img
+backup		RESERVED
 update-script	update-script
 recover-script	recover-script

@@ -7,9 +7,11 @@ parameter	Image/parameter.txt
 trust       Image/trust.img
 uboot       Image/uboot.img
 misc		Image/misc.img
-resource	Image/resource.img
-kernel		Image/kernel.img
+#resource	Image/resource.img
+#kernel		Image/kernel.img
 boot        Image/boot.img
+dtbo        Image/dtbo.img
+vbmeta      Image/vbmeta.img
 recovery	Image/recovery.img
 system		Image/system.img
 vendor		Image/vendor.img
