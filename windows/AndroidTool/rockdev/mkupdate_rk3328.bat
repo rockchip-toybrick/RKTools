@@ -1,5 +1,5 @@
 Afptool -pack .\backupimage backupimage\backup.img
-Afptool -pack ./ Image\update.img
+Afptool -pack ./ Image\update.img ./package-file-box
 
 
 RKImageMaker.exe -RK322H Image\MiniLoaderAll.bin  Image\update.img update.img -os_type:androidos
@@ -7,4 +7,4 @@ RKImageMaker.exe -RK322H Image\MiniLoaderAll.bin  Image\update.img update.img -o
 rem update.img is new format, Image\update.img is old format, so delete older format
 del  Image\update.img
 
-pause 
+pause
