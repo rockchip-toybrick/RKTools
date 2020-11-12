@@ -10,11 +10,11 @@ if [ ! -f "Image/parameter.txt" ]; then
 	echo "Error:No found parameter!"
 #	pause
 fi
-if [ ! -f "package-file" ]; then
+if [ ! -f "package-file-rk356x" ]; then
 	echo "Error:No found package-file!"
 #	pause
 fi
-./afptool -pack ./ Image/update.img || pause
+./afptool -pack ./ Image/update.img ./package-file-rk356x || pause
 ./rkImageMaker -RK3568 Image/MiniLoaderAll.bin Image/update.img update.img -os_type:androidos || pause
 echo "Making update.img OK."
 #echo "Press any key to quit:"
