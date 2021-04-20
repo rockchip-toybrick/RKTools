@@ -5,6 +5,7 @@ package-file    package-file
 bootloader	Image/MiniLoaderAll.bin
 parameter	Image/parameter.txt
 uboot       Image/uboot.img
+#misc        Image/pcba_small_misc.img
 misc        Image/misc.img
 boot        Image/boot.img
 dtbo        Image/dtbo.img
